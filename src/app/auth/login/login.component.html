@@ -1,0 +1,31 @@
+<section class="flex flex-col justify-center items-center w-[25vw]">
+  <h3 class="subtitle py-6">Please login with your account</h3>
+
+  <mat-button-toggle-group [(ngModel)]="selectedType" class="w-[80%] mb-4">
+    <mat-button-toggle
+      class="toggleBtn"
+      [class.active]="selectedType === 'customer'"
+      (change)="onChangeType('customer')"
+      >Customer</mat-button-toggle
+    >
+    <mat-button-toggle
+      class="toggleBtn"
+      [class.active]="selectedType === 'seller'"
+      (change)="onChangeType('seller')"
+      >Seller</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+
+  <form class="form">
+    <input type="mail" placeholder="Email" class="input" />
+    <input type="password" placeholder="Password" class="input" />
+
+    <small class="link">
+      <a>Forgot password?</a>
+    </small>
+
+    <button mat-raised-button class="button">Login</button>
+  </form>
+
+  <small>Don't have a Blanja account? <a class="link">Register</a></small>
+</section>

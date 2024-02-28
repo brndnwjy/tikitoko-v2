@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material/material.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
