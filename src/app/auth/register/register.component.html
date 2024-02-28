@@ -1,5 +1,5 @@
 <section class="flex flex-col justify-center items-center w-[25vw]">
-  <h3 class="subtitle py-6">Please login with your account</h3>
+  <h3 class="subtitle py-6">Register your new account</h3>
 
   <mat-button-toggle-group [(ngModel)]="selectedType" class="w-[80%] mb-4">
     <mat-button-toggle
@@ -17,15 +17,24 @@
   </mat-button-toggle-group>
 
   <form class="form">
+    <input type="text" placeholder="Name" class="input" />
     <input type="mail" placeholder="Email" class="input" />
+    <input
+      type="tel"
+      placeholder="Phone number"
+      class="input"
+      *ngIf="selectedType === 'seller'"
+    />
+    <input
+      type="text"
+      placeholder="Store name"
+      class="input"
+      *ngIf="selectedType === 'seller'"
+    />
     <input type="password" placeholder="Password" class="input" />
 
-    <small class="link">
-      <a>Forgot password?</a>
-    </small>
-
-    <button mat-raised-button class="button">Login</button>
+    <button mat-raised-button class="button">Register</button>
   </form>
 
-  <small>Don't have a Blanja account? <a routerLink="register" class="link">Register</a></small>
+  <small>Already have a Blanja account? <a routerLink="/auth" class="link">Login</a></small>
 </section>
