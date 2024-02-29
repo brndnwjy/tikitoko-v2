@@ -1,0 +1,18 @@
+<mat-toolbar class="navbar">
+  <div class="navbarWrapper">
+    <app-logo />
+
+    <div class="flex gap-4">
+      <button mat-button class="button buttonOrange" (click)="toAuth('')">
+        Login
+      </button>
+      <button
+        mat-button
+        class="button buttonWhite"
+        (click)="toAuth('register')"
+      >
+        Sign Up
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
