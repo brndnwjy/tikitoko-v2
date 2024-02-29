@@ -24,8 +24,11 @@
       <a routerLink="forgot-password">Forgot password?</a>
     </small>
 
-    <button mat-raised-button class="button">Login</button>
+    <button mat-raised-button class="button" (click)="onLogin()">Login</button>
   </form>
 
-  <small>Don't have a Blanja account? <a routerLink="register" class="link">Register</a></small>
+  <small
+    >Don't have a Blanja account?
+    <a routerLink="register" class="link">Register</a></small
+  >
 </section>
