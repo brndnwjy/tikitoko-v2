@@ -1,3 +1,19 @@
+/* wrapper */
+.authWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  max-width: 500px;
+}
+
+@media (min-width: 648px) {
+  .authWrapper {
+    width: 100vw;
+  }
+}
+
 /* title */
 .title {
   color: #db3022;
