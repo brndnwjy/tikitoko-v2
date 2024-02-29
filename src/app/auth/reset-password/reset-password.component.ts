@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-password',
-  templateUrl: './forgot-password.component.html',
+  templateUrl: './reset-password.component.html',
   styleUrl: '../auth.component.css',
 })
-export class ForgotPasswordComponent {
+export class ResetPasswordComponent {
   constructor(private router: Router) {}
 
-  toResetPassword() {
-    this.router.navigate(['/auth/reset-password']);
+  toLogin() {
+    this.router.navigate(['/auth']);
   }
 }
